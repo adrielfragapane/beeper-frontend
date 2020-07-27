@@ -7,6 +7,8 @@ const app = express();
 console.log(path.join (__dirname, 'public'));
 const publicPath = path.join (__dirname, 'public');
 
+console.log(path.join(publicPath, 'index.html'));
+
 app.use(express.static(publicPath));
 
 app.get('/*', (req,res) => {
